@@ -26,8 +26,8 @@ function buyItem(state: stateInterface, itemName: string) {
 
 function dropItem(state: stateInterface, itemName: string) {
   const nbItem = state[itemName];
-  const newItem = (nbItem - 1) < 0 ? 0 : (nbItem - 1);
-  const newState = {...state, [itemName]: (nbItem - 1) }
+  const newNbItem = (nbItem - 1) < 0 ? 0 : (nbItem - 1);
+  const newState = {...state, [itemName]: newNbItem }
   return newState;
 }
 

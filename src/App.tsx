@@ -14,7 +14,7 @@ const App: React.FC = () => {
         <ReducerContext.Provider value={ { state, dispatch } }>
           <Shop />
           <div>
-            separator
+            -------------------------------------------------
           </div>
           <Cart />
         </ReducerContext.Provider>
