@@ -6,7 +6,7 @@ interface stateInterface {
 }
 
 
-interface actionInterface {
+export interface actionInterface {
   itemName: "oranges" | "tomatoes" | "salads";
   type: "buy" | "drop";
 }
@@ -25,7 +25,7 @@ function buyItem(state: stateInterface, itemName: string) {
 }
 
 function dropItem(state: stateInterface, itemName: string) {
-  const nbItem = state[itemName as any];
+  const nbItem = state[itemName];
   const newItem = (nbItem - 1) < 0 ? 0 : (nbItem - 1);
   const newState = {...state, [itemName]: (nbItem - 1) }
   return newState;
