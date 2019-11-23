@@ -8,7 +8,7 @@ const Cart: React.FC = () => {
       Cart
       {
         Object.entries(state).map(([key, value]) =>
-          <p>
+          <p key={key}>
             <b>{key} :</b>
             <i>{value}</i>
          </p>
