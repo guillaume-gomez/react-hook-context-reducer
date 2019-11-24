@@ -22,7 +22,7 @@ const Shop: React.FC = () => {
 
   return (
     <div>
-      Shop
+      <h3>Shop</h3>
        <div>
          <button onClick={addItem("oranges")} type="button">Buy Oranges</button>
          <button onClick={addItem("tomatoes")} type="button">Buy Tomatoes</button>

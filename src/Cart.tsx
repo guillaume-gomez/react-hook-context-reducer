@@ -5,7 +5,7 @@ const Cart: React.FC = () => {
   const { state } = useContext(ReducerContext);
   return (
     <div>
-      Cart
+      <h3>Cart</h3>
       {
         Object.entries(state).map(([key, value]) =>
           <p key={key}>
